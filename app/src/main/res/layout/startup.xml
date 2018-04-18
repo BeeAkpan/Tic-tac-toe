@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    tools:context="com.example.blessingakpan.tic_tac_toe.StartupActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/us"
+        android:layout_marginBottom="98dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.35" />
+
+
+    <Button
+        android:id="@+id/startchoose_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:onClick="startGame"
+        android:text="Start"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/image"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="2dp"
+
+        />
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Share"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/startchoose_btn"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Exit"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/share_btn"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered By ALC 2.0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+
+
+</RelativeLayout>

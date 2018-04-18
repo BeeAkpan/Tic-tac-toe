@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context="com.example.blessingakpan.tic_tac_toe.MultiplayerEntryActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/us"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/EditPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="20sp"
+        android:layout_below="@+id/image"/>
+
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/EditPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="20sp"
+        android:layout_below="@+id/EditPlayer1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/EditPlayer2"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/board_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Board Size"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioG3_5"
+            android:layout_toRightOf="@+id/board_size"
+            android:layout_below="@+id/singleplaya_edit">
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/startchoose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/EditPlayer2"
+        android:background="@drawable/round_button"
+        android:onClick="startGame"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered By ALC 2.0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>

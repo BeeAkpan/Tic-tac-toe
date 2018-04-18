@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tic-tac-toe</string>
+    <string name="share_with">Share with...</string>
+    <string name="share_text">Hey, this is my new app. Check it out here\n https://bit.ly/2H4Cz7b</string>
+</resources>
